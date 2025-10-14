@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <html lang="es">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>Formulario de prueba de HTML5</title>
+    </head>
+    <body>
+        <h1>Controles de formulario</h1>
+        <form action="" method="get">
+            <fieldset>
+            <legend>Datos personales</legend>
+            <br/>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required autofocus>
+            <br/>
+            <br/>
+            <label for="correo">Correo eléctronico:</label>
+            <input type="text" id="correo" name="correo" required>
+            <br/>
+            <br/>
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" placeholder="Escribe la URL de tu página web personal">
+            <br/>
+            <br/>
+            <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="almeria">ALMERÍA</option>
+                    <option value="cadiz">CÁDIZ</option>
+                    <option value="cordoba">CÓRDOBA</option>
+                    <option value="granada">GRANADA</option>
+                    <option value="huelva">HUELVA</option>
+                    <option value="jaen">JAÉN</option>
+                    <option value="malaga">MÁLAGA</option>
+                    <option value="sevilla" selected>SEVILLA</option>
+                </select>
+            </fieldset>
+            <fieldset>
+            <legend>Otros datos</legend>
+            <br/>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br/>
+            <br/>
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" id="tiempo" name="tiempo">
+            <br/>
+            <br/>
+            <label for="fyh">Fecha y hora:</label>
+            <input type="datetime" id="fyh" name="fyh">
+            <br/>
+            <br/>
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes">
+            <br/>
+            <br/>
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana">
+            <br/>
+            <br/>
+            <label for="num">Número (min -10, max 10)</label>
+            <input type="number" id="num" name="num" min="-10" max="10">
+            <br/>
+            <br/>
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes">
+            <br/>
+            <br/>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel">
+            <br/>
+            <br/>
+            <label for="busqueda">Término de búsqueda:</label>
+            <input type="search" id="busqueda" name="busqueda">
+            <br/>
+            <br/>
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color">
+            </fieldset>
+            <fieldset>
+            <legend>Otros controles</legend>
+            <br/>
+            <label>Aficiones:</label>
+            <input type="checkbox" id="cine" name="aficiones" value="1" checked>
+            <label for="cine">Cine</label>
+            <input type="checkbox" id="deporte" name="aficiones" value="1">
+            <label for="deporte">Deporte</label>
+            <br/>
+            <br/>
+            <label>Forma de pago:</label>
+            <br/>
+            <input type="radio" id="visa" name="pago" value="v">
+            <label for="visa">Visa</label>
+            <input type="radio" id="american" name="pago" value="a">
+            <label for="american">American Express</label>
+            <input type="radio" id="mastercard" name="pago" value="m">
+            <label for="mastercard">MasterCard</label>
+            </fieldset>
+            <br/>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </body>
+</html>
